@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 header {
     display: block
 }
@@ -12,7 +15,12 @@ h1 {
 }
 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 12px;    
+}
+main {
+    width: 90%;
+    margin: auto;
+   
 }
 .burguer-menu {
     color: #03264C;
@@ -20,4 +28,11 @@ p {
 }
 footer {
     text-align: center
+}
+article {
+margin: 10px 0;
+}
+.box-products {
+    margin: 0;
+    border: solid 1px #ebebeb; 
 }
