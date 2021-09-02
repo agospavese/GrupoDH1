@@ -1,0 +1,284 @@
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+*{
+    box-sizing: border-box;
+   
+}
+header{
+    background-color: #eac926;
+    width: 100%;
+   
+}
+
+.logo {
+    width: 170px;
+    height: 100px;
+    padding: 15px;
+   
+}
+.promo {
+color: rgb(4, 4, 88);
+font-size: 20px;
+font-family: "Roboto", sans-serif;
+text-align: center;
+font-weight: bold;
+margin: 0;
+padding: 0;
+
+}
+.barraDeBusqueda {
+    display: block;
+    width: 50%;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+  
+}
+
+.fa-search {
+    position: absolute;
+    right: 5px;
+    top: 4px;
+}
+.search {
+    border-radius: 4px;
+    border: solid 1px white;
+}
+.body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    margin: 0px;
+    font-size: 12px;
+   
+}
+
+.navbar-rigth, .navbar-left {
+  display: none;
+  margin: 10px;
+
+ 
+}
+
+
+h3{
+   
+    font-size: 26px;
+   color: black;
+   background-color: #ebebeb;
+   text-align: center;
+   
+}
+.tarj-credito {
+    font-size: 22px;
+    color:rgb(110, 110, 110) 
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ebebeb;
+}
+.main section article i {
+    display: block ;
+    font-size: 16 px ;
+    padding: 5 px ;
+    width: 30 px ;
+    height: 30 px ;
+    border: 1 px solid #39b54a ;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute ;
+    right: 20 px ;
+    top: -15 px ;
+    }
+
+.burger-menu{
+    background-color: #03264C;
+    color: white;
+    max-width: 50px;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    
+}
+.ultima-visita {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:#ebebeb;
+    
+
+}
+
+.cards-productos{
+    margin-top: 10px;
+    background-color: white;
+    border-bottom: solid 1px #ebebeb;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    text-align: center;
+    
+}
+
+.texto-cards-productos{
+    border-top: 1px solid #ebebeb;
+    margin: 15px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+   
+}
+.ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ebebeb;
+}
+
+
+  
+
+.fa-truck {
+    color: #39b54a;
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+    background-color: white;
+    padding: 3%;
+    position: absolute;
+    right: 47px;
+   
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+}
+.fa-credit-card {
+    color:darkblue;
+}
+.fa-gift {
+    color: darkblue;
+}
+.fa-user-shield {
+    color: darkblue;
+}
+.article{
+margin: 10px 0;
+}
+
+
+.descripcion{
+    font-size: 16px;
+  color: white;
+    transition: 0.45s;
+}
+.descripcion:hover {
+    color: black;
+    
+}
+.descuento{
+font-size: 16px;
+color: #39b54a;
+}
+.precio{
+    font-size: 18px;
+}
+
+
+@media (min-width: 769px){
+    .main {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        background-color: #ebebeb;
+    }
+    .barraDeBusqueda {
+        display: block;
+        width: 50%;
+        
+    }
+.search {
+ 
+        width: 300px;
+        padding: 7px;
+        border-radius:3px;
+        background-color: white;
+        border: white;
+        position: absolute;
+        right: 5px;
+       
+    }
+.cabeceraPrincipal {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+} 
+.cabeceraPrincipal .navbar-left {
+   display: flex;
+    justify-content: space-around;  
+    color: #03264C;
+}
+.navbar-left ul {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    position: absolute;
+    left: 5px;
+    
+    
+}
+.navbar-left ul li {
+    padding: 10px;
+   
+}
+.cabeceraPrincipal .navbar-rigth {
+    display: flex;
+    justify-content: space-around;
+    color: #03264C;
+    position: relative;
+    top: 35px;
+}
+.navbar-rigth a{
+    padding-left: 10px;
+}
+
+.burger-menu{
+    display: none;
+}
+.logo {
+    width: 250px;
+}
+.descripcion{
+    display: flex;
+    justify-content: center;
+}
+.ultima-visita {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cards-productos {
+    width: 20%;
+    
+}
+.ofertas {
+    flex-direction: row;
+    justify-content: space-around;
+}
+.fa-truck {
+    color: #39b54a;
+    border-radius: 50%;
+    border: solid 1px #39b54a;
+    background-color: white;
+    visibility: hidden;
+  
+}
+}
