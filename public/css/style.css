@@ -62,22 +62,14 @@ padding: 0;
 .navbar-rigth, .navbar-left {
   display: none;
   margin: 10px;
-
- 
 }
-
-
-h3{
+.titulo-visita{
    
     font-size: 26px;
    color: black;
    background-color: #ebebeb;
    text-align: center;
    
-}
-.tarj-credito {
-    font-size: 22px;
-    color:rgb(110, 110, 110) 
 }
 
 .main {
@@ -86,19 +78,6 @@ h3{
     text-align: center;
     background-color: #ebebeb;
 }
-.main section article i {
-    display: block ;
-    font-size: 16 px ;
-    padding: 5 px ;
-    width: 30 px ;
-    height: 30 px ;
-    border: 1 px solid #39b54a ;
-    background-color: #ebebeb;
-    border-radius: 50%;
-    position: absolute ;
-    right: 20 px ;
-    top: -15 px ;
-    }
 
 .burger-menu{
     background-color: #03264C;
@@ -137,6 +116,13 @@ h3{
     font-family: "Roboto", sans-serif;
    
 }
+.titulo-ofertas {
+    font-size: 26px;
+    color: black;
+    background-color: #ebebeb;
+    text-align: center;
+    
+}
 .ofertas {
     display: flex;
     flex-wrap: wrap;
@@ -144,8 +130,6 @@ h3{
     background-color: #ebebeb;
 }
 
-
-  
 
 .fa-truck {
     color: #39b54a;
@@ -158,18 +142,24 @@ h3{
    
 }
 
-footer{
-    text-align: center;
-    background-color: white;
-}
+
 .fa-credit-card {
     color:darkblue;
+}
+.fa-credit-card:hover {
+    color:rgb(231, 243, 62);
 }
 .fa-gift {
     color: darkblue;
 }
+.fa-gift:hover {
+    color:rgb(231, 243, 62);
+}
 .fa-user-shield {
     color: darkblue;
+}
+.fa-user-shield:hover {
+    color:rgb(231, 243, 62);
 }
 .article{
 margin: 10px 0;
@@ -192,6 +182,7 @@ color: #39b54a;
 .precio{
     font-size: 18px;
 }
+/* Registro y login */
 .registro-form {
     width: 90%;
     margin: auto;
@@ -215,6 +206,7 @@ color: #39b54a;
       font-size: 18px;
       font-family: "Roboto", sans-serif;
   }
+
   .form-boton {
       background-color: #03264C;
       color: white;
@@ -250,19 +242,68 @@ color: #39b54a;
   }
   .boton-login {
     background-color: #03264C;
-    color: white;
-    
+    color: white;   
     border-radius: 4px;
+    
 }
-
-.botones-login1 {
+.boton-login:hover {
+    background-color: #0022AA;
+}
+.boton-login1 {
     width: 100%;
     display: flex;
          
        
     }
-
+footer{
+    text-align: center;
+    background-color: white;
+}
 @media (min-width: 769px){
+    .fa-truck {
+        position: relative;
+        left: 250px;
+        bottom: 25px;
+        
+    }
+    .fa-search {
+        position: relative;
+        right: 20px;
+    }
+    .login-form div .boton-login {
+        width: 50%;
+        display: block;
+        justify-content: center;
+        position: relative;
+        left: 150px;
+     }
+     .registro-form {
+        width: 60%;
+        display: block;
+        justify-content: center;
+       }
+       .registro-form div  {
+           width: 100%;
+           display: block;
+           justify-content: center;
+           padding:10px;
+         
+       }
+       .registro-form div input {
+             display: block;
+           justify-content: center;
+           height: 30px;
+       }
+       .registro-form div .form-boton {
+        width: 50%;
+        display: block;
+        position: relative;
+        left: 110px;
+
+      }
+       
+    }
+@media (min-width: 1020px){
     .main {
         width: 90%;
         margin: 0 auto;
@@ -271,19 +312,23 @@ color: #39b54a;
     }
     .barraDeBusqueda {
         display: block;
-        width: 50%;
+        width: 30%;
         
     }
 .search {
  
-        width: 300px;
+        width: 200px;
         padding: 7px;
         border-radius:3px;
         background-color: white;
         border: white;
         position: absolute;
-        right: 5px;
+        right: 38px;
        
+    }
+    .fa-search {
+       position:relative;
+       left: 350px;
     }
 .cabeceraPrincipal {
     display: flex;
@@ -346,9 +391,14 @@ color: #39b54a;
     border-radius: 50%;
     border: solid 1px #39b54a;
     background-color: white;
-    visibility: hidden;
-  
+   
 }
+.cards-productos .texto-cards-productos .fa-truck {
+    position: relative;
+    left: 80px;
+}
+
+/* Formulario registro */
 .registro-form {
  width: 60%;
  display: block;
@@ -366,6 +416,18 @@ color: #39b54a;
     justify-content: center;
     height: 30px;
 }
+.registro-form div .form-boton{
+    width: 50%;
+    display: block;
+    position: relative;
+    left: 180px;
+   
+  }
+   
+
+   
+
+/* Login */
 .login-form {
     width: 60%;
     display: block;
@@ -374,7 +436,7 @@ color: #39b54a;
    .login-form div  {
        width: 100%;
        display: block;
-       justify-content: center;
+       justify-content: space-around;
        padding:10px;
      
    }
@@ -382,16 +444,35 @@ color: #39b54a;
          display: block;
        justify-content: center;
        height: 30px;
+      
    }
-   .boton-login {
+  .boton-login {
        width: 50%;
    }
+   .boton-login:hover {
+    background-color: #0022AA;
+}
    .botones-login1 {
     width: 50%;
-    display: flex;
-         
+    display: block;   
        
+    }
+    .login-form div .boton-login {
+       width: 50%;
+       display: block;
+       justify-content: center;
+       position: relative;
+       left: 180px;
+    }
+.footer {
+      display: block;
+      justify-content: space-around;
+
+    }
+    .pie-de-pagina{
+       display: block;
+       justify-content: center;
+
     }
 
 }
-
