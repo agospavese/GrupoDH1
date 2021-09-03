@@ -17,8 +17,8 @@ app.get ("/login", (req, res) => {
 
 })
 const port= process.env.PORT || '3000';
-app.listen(port,() =>{
-    console.log(`Server is running in the Port : ${port}`);
+app.listen(process.env.PORT || 3000, function () {
+    console.log(`Servidor corriendo en el puerto 3000`);
 
     })
 
